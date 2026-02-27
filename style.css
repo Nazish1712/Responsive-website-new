@@ -1,0 +1,179 @@
+*,*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family:"Oswald" , sans-serif;
+    font-size: 1rem;
+}
+
+img{
+    max-width: 100%;
+}
+/* *** nav bar ****/
+
+h1{
+    font-size: 1.125rem;
+}
+
+header{
+    background-color: #3E323F;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-toggle{
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #3B4050;
+    color: white;
+    transition: opacity 250ms ease;
+
+    position:absolute;
+    left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover{
+    opacity: .5;
+}
+
+.hamburger{
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+
+.nav__list{
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav__link{
+    text-decoration: none;
+    color:#fff ;
+}
+
+.nav__link:focus,
+.nav__link:hover{
+    opacity: .55;
+}
+
+.nav__item{
+    margin-top: 1rem;
+    letter-spacing: .1rem;
+}
+
+.nav__button{
+    background: #A59678;
+    padding: .2em .5em;
+    border-radius: 20px;
+}
+
+/**** section / intro *****/
+
+.intro{
+   background-color: #3B4050;
+   color: #FFFFFF;
+   font-size: 1.5rem ;
+}
+
+h1{
+    font-size: 5.625rem ;
+    margin: 0;
+    line-height: 7rem;
+}
+
+.intro__button{
+    background-color: #A59678;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: .75em 2em;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section p{
+    margin: .5rem 0;
+}
+ 
+
+/**** article ****/
+article{
+    background-color: rgb(250, 243, 243);
+    padding: .4rem 0;
+    font-size: 1.125rem;
+}
+
+h2{
+    font-size: 2.25rem;
+    color: #A59678;
+    margin: 0 0 .3rem 0;
+}
+
+article p{
+    margin: 0;
+}
+
+/***** main *****/
+main{
+    background-color: #FFFFFF;
+}
+
+
+

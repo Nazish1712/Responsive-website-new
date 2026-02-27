@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conquering Responsive Layouts</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Conquering Responsive Layouts</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="container">
        <button class="nav-toggle">
            <span class="hamburger"></span>
-       </button>
+       </button> 
     <a class="logo">
       <img src="logo.svg" alt="company logo">
     </a>
 
-    <div class="nav">
+    <nav class="nav">
         <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__link">HOME</a></li>
             <li class="nav__item"><a href="#" class="nav__link">ABOUT</a></li>
             <li class="nav__item"><a href="#" class="nav__link">CONTACT</a></li>
             <li class="nav__item"><a href="#" class="nav__link">SIGN IN</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">SIGN UP</a></li>
+            <li class="nav__item "><a href="#" class="nav__link nav__button">SIGN UP</a></li>
         </ul>
-    </div>
+      </nav>
     </div>
   </header>
  
@@ -34,18 +36,18 @@
   <section class="intro">
      <div class="container">
         <div class="col">
-            <h1>Responsive layouts dont have to be a struggle</h1>
+            <h1>Responsive layouts <span style="color: #A59678">don't have to be a struggle</span></h1>
         </div>
         <div class="col">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia placeat labore a eveniet, cumque nam dicta rerum alias voluptatum?</p>
-            <button>I WANT TO LEARN</button>
+            <button class="intro__button">I WANT TO LEARN</button>
         </div>
      </div>
   </section>
 
 
 
-   <section class="middle-first">
+   <article>
     <div class="container">
         <div class="col">
             <h2>Mobile-first</h2>
@@ -60,13 +62,13 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit asperiores ullam quidem aut quia, repellendus esse vero blanditiis, cupiditate saepe inventore nemo quo voluptatum.</p>
         </div>
     </div>
-   </section>
+  </article>
    
    
-   <section class="middle-second">
+   <main>
     <div class="container">
         <div class="col">
-          <h2>It doesn't have to be so hard</h2>
+          <h3>It doesn't have to be so hard</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis exercitationem at esse quam ratione eaque saepe error distinctio ab rem. Ut, alias itaque deleniti, autem explicabo repudiandae nam corporis rem modi harum maiores id quisquam? Expedita, itaque harum atque reprehenderit consequatur explicabo fuga magni nisi voluptates!</p>
           <div>
             <img src="the-image.jpg" alt="">
@@ -87,44 +89,44 @@
           </div>
         </div>
     </div>
-   </section>
+  </main>
    
    <footer class="footer">
      <div class="container">
-       <h3></h3>
+       <h4>just scratching the surface</h4>
     <div class="col">
-      <h2>About our company</h2>
+      <h5>About our company</h5>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi harum numquam quam, praesentium labore optio dolore eaque, modi pariatur corporis minus asperiores. Aliquam, repellat.</p>
     </div>
     <div>
-        <h2>Getting around</h2>
+        <h5>Getting around</h5>
         <div class="nav__footer">
           <ul class="nav__list__footer">
-            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="#" class="nav__link__footer">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link__footer">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link__footer">Contact</a></li>
           </ul>
         </div>
     </div>
     <div>
-        <h2>Other things</h2>
+        <h5>Other things</h5>
         <div class="nav__footer">
           <ul class="nav__list__footer">
-            <li class="nav__item"><a href="#" class="nav__link">Lorem ipsum.</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Lorem</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Lorem ipsum</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Lorem</a></li>
+            <li class="nav__item"><a href="#" class="nav__link__footer">Lorem ipsum.</a></li>
+            <li class="nav__item"><a href="#" class="nav__link__footer">lorem</a></a></li>
+            <li class="nav__item"><a href="#" class="nav__link__footer">Lorem ipsum</a></li>
+            <li class="nav__item"><a href="#" class="nav__link__footer">Lorem</a></li>
           </ul>
         </div>
     </div>
     <div>
-        <h2>And more</h2>
+        <h5>And more</h5>
         <div class="nav__footer">
           <ul class="nav__list__footer">
-            <li class="nav__item"><a href="#" class="nav__link">Lorem ipsum</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">dolor</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">sit amet</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">consectetur</a></li>
+            <li class="nav__item"><a href="#" class="nav__link__footer">Lorem ipsum</a></li>
+            <li class="nav__item"><a href="#" class="nav__link__footer">dolor</a></li>
+            <li class="nav__item"><a href="#" class="nav__link__footer">sit amet</a></li>
+            <li class="nav__item"><a href="#" class="nav__link__footer">consectetur</a></li>
           </ul>
         </div>
     </div>
