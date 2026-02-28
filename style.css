@@ -1,6 +1,13 @@
 *,*::before,
 *::after{
     box-sizing: border-box;
+    
+}
+
+:root{
+  --clr-header:#3E323F;
+  --clr-primary:#3B4050;
+  --clr-secondary:#A59678;
 }
 
 body{
@@ -19,7 +26,7 @@ h1{
 }
 
 header{
-    background-color: #3E323F;
+    background-color: var(--clr-header);
     padding: 1em 0;
     text-align: center;
 }
@@ -116,7 +123,7 @@ header{
 }
 
 .nav__button{
-    background: #A59678;
+    background: var(--clr-secondary);
     padding: .2em .5em;
     border-radius: 20px;
 }
@@ -124,7 +131,7 @@ header{
 /**** section / intro *****/
 
 .intro{
-   background-color: #3B4050;
+   background-color: var(--clr-primary);
    color: #FFFFFF;
    font-size: 1.5rem ;
 }
@@ -136,7 +143,7 @@ h1{
 }
 
 .intro__button{
-    background-color: #A59678;
+    background-color: var(--clr-secondary);
     border: none;
     font-size: 1.5rem;
     font-weight: 500;
@@ -162,7 +169,7 @@ article{
 
 h2{
     font-size: 2.25rem;
-    color: #A59678;
+    color: var(--clr-secondary);
     margin: 0 0 .3rem 0;
 }
 
@@ -174,6 +181,118 @@ article p{
 main{
     background-color: #FFFFFF;
 }
+
+h3{
+    font-size: 2.25rem ;
+    color: var(--clr-secondary);
+}
+
+main p{
+    font-size: 1.3125rem;
+
+}
+
+  /**** aside ****/
+aside{
+    text-align: center;
+}
+
+aside h2{
+    color: #FFFFFF;
+    font-size: 1.875rem;
+    margin: 0;
+} 
+
+.aside-col{
+    background-color: var(--clr-primary);
+    margin-bottom: .6rem;
+    padding: .5em;
+}
+
+aside p{
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+   /**** footer *****/
+
+   footer{
+    background-color: var(--clr-primary);
+    padding: .5rem;
+    
+   }
+
+   footer p{
+    color: #6F737F ;
+   }
+
+   h4{
+    font-size:1.5rem ;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+   }
+
+   h5{
+    font-size: 1rem;
+    color: var(--clr-secondary);
+   }
+
+   .nav__link__footer{
+    text-decoration: none;
+    color: #6F737F ;
+   }
+
+   .nav__list__footer{
+     list-style: none;
+     padding-left: 0;
+   }
+
+
+
+   @media( min-width: 1000px){
+   
+    .flex{
+        display: flex;
+    }
+
+    /* header */
+    .container{
+        justify-content: space-between;
+    }
+
+    .nav__link{
+        font-weight: 600;
+    }
+    .nav__list{
+        margin: 0;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .nav__item{
+        margin: 0 0 0 3em;
+        padding-top:0.3em;
+    }
+    .nav {
+        visibility: visible;
+        align-items: center;
+        height: auto;
+        position: relative;
+    }
+    .nav__link--button{
+        padding: .1em .35em;
+    }
+
+    /* intro */
+    .intro-col{
+        width: 45%;
+    }
+
+
+   }
+
+
 
 
 
