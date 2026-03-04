@@ -163,8 +163,10 @@ section p{
 /**** article ****/
 article{
     background-color: rgb(250, 243, 243);
-    padding: .4rem 0;
     font-size: 1.125rem;
+}
+article .container{
+    padding: .4rem 0;
 }
 
 h2{
@@ -257,9 +259,10 @@ aside p{
     }
 
     /* header */
-    .container{
+    header .container{
         justify-content: space-between;
-    }
+        align-items:center;
+    } 
 
     .nav__link{
         font-weight: 600;
@@ -285,11 +288,71 @@ aside p{
     }
 
     /* intro */
-    .intro-col{
-        width: 45%;
+   .intro{
+    padding: 4rem 0;
+   }
+   section .container{
+    align-items: end;
+    gap: 3rem;
+   }
+   .intro-col{
+        flex: 1;
+    }
+    h1{
+     line-height: 5.7rem;
     }
 
+    /* article */
+    article{
+        padding: 1.5rem 0;
+    }
+    article .container{
+        gap: 2rem;
+    }
+    article .col{
+        flex: 1;
+    }
 
+    /* main */
+    main .container{
+        gap: 5rem;
+        padding: 4rem 0;
+    }
+
+    main h3{
+        margin: 0;
+        padding-top:0;
+    }
+    main .col{
+        flex: 1;
+    }
+    /* aside */
+    .aside-col{
+        padding: 1.5rem;
+    }
+
+    /* footer */
+    footer .container{
+        flex-direction: column;
+    }
+    footer h4{
+    text-align: center;
+    margin-bottom: 2rem;
+    }
+    .footer__col{
+    gap: 5rem;
+    }
+    .footer__col .col{
+    flex: 1;
+   
+    }
+    .footer__col .col:first-child{
+        flex: 2;
+    }
+    .nav__item__footer{
+        margin-bottom: .5rem;
+    }
+   
    }
 
 
